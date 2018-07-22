@@ -509,7 +509,8 @@
 
         d3.select("button").on("click", reset);
 
-        d3.csv("https://github.com/Jovian28/S-P/blob/test/data.csv", function (error, data) {
+        d3.csv("https://raw.githubusercontent.com/Jovian28/S-P/test/data.csv", function (error, data) {
+            console.log(data[0]);
             var accessor = candlestick.accessor(),
                 indicatorPreRoll = 33;  // Don't show where indicators don't have data
 
