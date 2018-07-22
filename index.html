@@ -6,11 +6,10 @@
     <style>
         body {
             font: 10px sans-serif;
-            background-color:#333;
         }
 
         text {
-            fill: #FFF;
+            fill: #000;
         }
 
         text.symbol {
@@ -23,7 +22,7 @@
         }
 
         path.candle {
-            stroke: #FFF;
+            stroke: #000000;
         }
 
         path.candle.body {
@@ -91,7 +90,7 @@
         }
 
         path.rsi {
-            stroke: #FFF;
+            stroke: #000000;
         }
 
         path.overbought,
@@ -421,7 +420,7 @@
         svg.append('text')
             .attr("class", "symbol")
             .attr("x", 20)
-            .text("S&P Test Data");
+            .text("Facebook, Inc. (FB)");
 
         svg.append("g")
             .attr("class", "x axis")
@@ -542,10 +541,10 @@
             ];
 
             var trades = [
-                { date: data[20].date, type: "buy", price: data[20].low, low: data[20].low, high: data[20].high },
-                { date: data[30].date, type: "sell", price: data[30].high, low: data[30].low, high: data[30].high },
-                { date: data[40].date, type: "buy", price: data[40].low, low: data[40].low, high: data[40].high },
-                { date: data[50].date, type: "sell", price: data[50].low, low: data[50].low, high: data[50].high }
+                { date: data[67].date, type: "buy", price: data[67].low, low: data[67].low, high: data[67].high },
+                { date: data[100].date, type: "sell", price: data[100].high, low: data[100].low, high: data[100].high },
+                { date: data[130].date, type: "buy", price: data[130].low, low: data[130].low, high: data[130].high },
+                { date: data[170].date, type: "sell", price: data[170].low, low: data[170].low, high: data[170].high }
             ];
 
             var macdData = techan.indicator.macd()(data);
